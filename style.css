@@ -1,16 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Righteous&display=swap');
+
 body{
     margin: 0vw 0vw 0vw 0vw;
     display: flex;
     flex-direction: column;
+    background-color: #3e3e3e;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw auto 0vw auto;
+    background-color: #333333;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    margin: 0vw auto 2vw auto;
+    background-color: #292929;
+}
+
+.header h1{
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Righteous';
+    font-weight: bold;
+    /* letter-spacing: 0.5vw; */
+    margin-left: 2vw;
+}
+
+.header p{
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    color: white;
+    margin: 1.5vw 2vw 0vw 30vw;
+    height: fit-content;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header svg{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: 1.3vw;
+    cursor: pointer;
+    margin-right: 2vw;
 }
 
 img{
-    width: 30vw;
+    width: 35vw;
     height: 30vw;
+    margin: 0vw auto 0vw auto;
+    border-radius: 30px;
+    border: 3px solid white;
 }
 
 button{
-    margin-top: 5vw;
-    width: 5vw;
-    height: 5vw;
+    margin: 2vw auto 2vw auto;
+    width: 7vw;
+    height: 3vw;
+    padding: 0vw 1vw 0vw 1vw;
+    border: none;
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+
+    .hero{
+        margin-top: 15vw;
+    }
+
+    .header h1{
+        font-size: 5.5vw;
+        margin: 5vw 0vw 5vw 6vw ;
+    }
+
+    .header p{
+        font-size: 4vw;
+        margin-top: 6vw;
+
+    }
+
+    .header svg{
+        width: 6vw;
+        height: 6vw;
+        margin: 5.5vw 6vw 0vw 3vw;
+    }
+
+    img{
+        margin-top: 10vw;
+        width: 80vw ;
+        height: 90vw;
+    }
+
+    button{
+        margin-top: 10vw ;
+        width: 25vw;
+        height: 11vw;
+        font-size: 4vw;
+        margin-bottom: 10vw;
+    }
 }
