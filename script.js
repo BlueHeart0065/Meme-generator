@@ -18,3 +18,7 @@ function getMeme() {
         console.error("Error fetching meme:", error);
     })
 }
+
+function changeTheme(){
+    document.body.classList.toggle("light");
+}
